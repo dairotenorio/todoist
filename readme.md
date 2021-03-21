@@ -1,6 +1,11 @@
 # Automation framework Wizeline API challenge exercises
     This document explains how to install and run the API automation project.
     The goal of this project is to automate API test with POSTMAN.
+
+    Notes: in case we want to run this project in a CI/CD and avoid risking the system using credential inside the code, we may want to implement something like this in the scripts of the CI/CD machine: 
+        json -I -f environmentVariables.json -e "this.token='token_value'"
+    -I -f activates in-place editing that writes updates to the input file
+    -e executes the supplied expression on the input JSON object
  
  ## Initial set up
     Install node.js
